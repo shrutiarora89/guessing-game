@@ -19,7 +19,22 @@ else {
 // Taking the Answer and Logging it with a meaning message
 console.log('This is what you answered for Question1 ' + question1.toUpperCase());
 //////////////////////////////////////////////////////////////////////////////////////
+var question2 = prompt('Is it raining today?');
 
+if(question2.toUpperCase() === 'YES' || question2.toUpperCase() === 'Y'){
+	alert('Lucky you');
+	count=count+1;
+}
+else if(question2.toUpperCase() === 'NO' || question2.toUpperCase() === 'N'){
+	alert('No, That\'s not the right answer');
+}
+else {
+	alert('Please Provide a relevant response.');
+}
+
+console.log('This is what you answered for Question2 ' + question2.toUpperCase());
+
+//////////////////////////////////////////////////////////////////////////////////////
 
 
 
