@@ -4,10 +4,9 @@ var userName = prompt('Hello, please enter your name: ');
 var one = document.getElementById('one');
 var two = document.getElementById('two');
 var three = document.getElementById('three');
-
+var correctAnswers = document.getElementById('correctAnswers');
 // The Three Questions
 //////////////////////////////////////////////////////////////////////////////////////
-
 function question1func() {
 
     var question1 = prompt('Do you learn during the lab time?');
@@ -21,11 +20,9 @@ function question1func() {
         one.innerHTML = ('Plz provide a relevant response.');
     }
 
-
-// Taking the Answer and Logging it with a meaning message
-console.log('This is what you answered for Question1 ' + question1.toUpperCase());
+    // Taking the Answer and Logging it with a meaning message
+    console.log('This is what you answered for Question1 ' + question1.toUpperCase());
 }
-
 //////////////////////////////////////////////////////////////////////////////////////
 
 function question2func() {
@@ -59,10 +56,11 @@ function question3func() {
 
 }
 //////////////////////////////////////////////////////////////////////////////////////
+//Here the question functions are called.
 question1func();
 question2func();
 question3func();
 
 
 //Count the Correct answers
-alert('Hi ' + userName + '!! You have got ' + count + ' right answers!! Thanks for Playing.');
+correctAnswers.innerHTML = ('Hi ' + userName + '!! You have got ' + count + ' right answers!! Thanks for Playing.');
