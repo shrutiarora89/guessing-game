@@ -1,4 +1,9 @@
 var count = 0;
+var userName = prompt('Hello, please enter your name: ');
+
+var one = document.getElementById('one');
+var two = document.getElementById('two');
+var three = document.getElementById('three');
 
 // The Three Questions
 //////////////////////////////////////////////////////////////////////////////////////
@@ -8,12 +13,12 @@ function question1func() {
     var question1 = prompt('Do you learn during the lab time?');
 
     if (question1.toUpperCase() === 'YES' || question1.toUpperCase() === 'Y') {
-        alert('Great!');
+        one.innerHTML = ('Great ' + userName + '!');
         count = count + 1;
     } else if (question1.toUpperCase() === 'NO' || question1.toUpperCase() === 'N') {
-        alert('No, That\'s not the right answer');
+        one.innerHTML = ('No, ' + userName + ' that\'s not the right answer');
     } else {
-        alert('Plz provide a relevant response.');
+        one.innerHTML = ('Plz provide a relevant response.');
     }
 
 
@@ -27,12 +32,12 @@ function question2func() {
     var question2 = prompt('Is it raining today?');
 
     if (question2.toUpperCase() === 'YES' || question2.toUpperCase() === 'Y') {
-        alert('Lucky you');
+        two.innerHTML = ('Lucky you ' + userName + '!');
         count = count + 1;
     } else if (question2.toUpperCase() === 'NO' || question2.toUpperCase() === 'N') {
-        alert('No, That\'s not the right answer');
+        two.innerHTML = ('No, ' + userName + ' That\'s not the right answer');
     } else {
-        alert('Please Provide a relevant response.');
+        two.innerHTML = ('Please Provide a relevant response.');
     }
 
     console.log('This is what you answered for Question2 ' + question2.toUpperCase());
@@ -43,12 +48,12 @@ function question3func() {
     var question3 = prompt('Are you excited to learn more coding?');
 
     if (question3.toUpperCase() === 'YES' || question3.toUpperCase() === 'Y') {
-        alert('Lucky you');
+        three.innerHTML = ('Fantastic ' + userName + '!');
         count = count + 1;
     } else if (question3.toUpperCase() === 'NO' || question3.toUpperCase() === 'N') {
-        alert('No, That\'s not the right answer');
+        three.innerHTML = ('No, ' + userName + ' that\'s not the right answer');
     } else {
-        alert('Please Provide a relevant response.');
+        three.innerHTML = ('Please ' + userName + ', provide a relevant response.');
     }
     console.log('This is what you answered for Question3 ' + question3.toUpperCase());
 
@@ -60,4 +65,4 @@ question3func();
 
 
 //Count the Correct answers
-alert('Hi!! You have got,' + count + ' right answers!!Thanks for Playing.');
+alert('Hi ' + userName + '!! You have got ' + count + ' right answers!! Thanks for Playing.');
