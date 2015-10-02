@@ -6,16 +6,20 @@ var one = document.getElementById('one');
 var two = document.getElementById('two');
 var three = document.getElementById('three');
 var correctAnswers = document.getElementById('correctAnswers');
+
+var questions = ['Do you learn during the lab time?', 'Is it raining today?', 'Are you excited to learn more coding?'];
+var answers = ['YES', 'Y', 'NO', 'N'];
+
 // The Three Questions
 //////////////////////////////////////////////////////////////////////////////////////
 function question1func() {
 
-    var question1 = prompt('Do you learn during the lab time?');
+    var question1 = prompt(questions[0]);
 
-    if (question1.toUpperCase() === 'YES' || question1.toUpperCase() === 'Y') {
+    if (question1.toUpperCase() === answers[0] || question1.toUpperCase() === answers[1]) {
         one.innerHTML = ('Great ' + userName + '!');
         count = count + 1;
-    } else if (question1.toUpperCase() === 'NO' || question1.toUpperCase() === 'N') {
+    } else if (question1.toUpperCase() === answers[2] || question1.toUpperCase() === answers[3]) {
         one.innerHTML = ('No, ' + userName + ' that\'s not the right answer');
     } else {
         one.innerHTML = ('Plz provide a relevant response.');
@@ -27,12 +31,12 @@ function question1func() {
 //////////////////////////////////////////////////////////////////////////////////////
 
 function question2func() {
-    var question2 = prompt('Is it raining today?');
+    var question2 = prompt(questions[1]);
 
-    if (question2.toUpperCase() === 'YES' || question2.toUpperCase() === 'Y') {
+    if (question2.toUpperCase() === answers[0] || question2.toUpperCase() === answers[1]) {
         two.innerHTML = ('Lucky you ' + userName + '!');
         count = count + 1;
-    } else if (question2.toUpperCase() === 'NO' || question2.toUpperCase() === 'N') {
+    } else if (question2.toUpperCase() === answers[2] || question2.toUpperCase() === answers[3]) {
         two.innerHTML = ('No, ' + userName + ' That\'s not the right answer');
     } else {
         two.innerHTML = ('Please Provide a relevant response.');
@@ -43,12 +47,12 @@ function question2func() {
 //////////////////////////////////////////////////////////////////////////////////////
 
 function question3func() {
-    var question3 = prompt('Are you excited to learn more coding?');
+    var question3 = prompt(questions[2]);
 
-    if (question3.toUpperCase() === 'YES' || question3.toUpperCase() === 'Y') {
+    if (question3.toUpperCase() === answers[0] || question3.toUpperCase() === answers[1]) {
         three.innerHTML = ('Fantastic ' + userName + '!');
         count = count + 1;
-    } else if (question3.toUpperCase() === 'NO' || question3.toUpperCase() === 'N') {
+    } else if (question3.toUpperCase() === answers[2] || question3.toUpperCase() === answers[3]) {
         three.innerHTML = ('No, ' + userName + ' that\'s not the right answer');
     } else {
         three.innerHTML = ('Please ' + userName + ', provide a relevant response.');
