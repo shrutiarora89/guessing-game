@@ -15,15 +15,15 @@ var answers = ['YES', 'Y', 'NO', 'N'];
 //////////////////////////////////////////////////////////////////////////////////////
 function question1func() {
 
-  var question1 = prompt(questions[0]);
+  var question1 = prompt(questions[0])
 
   if (question1.toUpperCase() === answers[0] || question1.toUpperCase() === answers[1]) {
-    one.innerHTML = ('Great ' + userName + '!');
+    one1.innerHTML = ('Great ' + userName + '!');
     count = count + 1;
     console.log(count);
     img1.innerHTML = '<img src="img/codefellows.png" width="200">';
   } else if (question1.toUpperCase() === answers[2] || question1.toUpperCase() === answers[3]) {
-      one.innerHTML = ('No, ' + userName + ' that\'s not the right answer');
+      one2.innerHTML = ('No, ' + userName + ' that\'s not the right answer');
   } else {
       one.innerHTML = ('Plz provide a relevant response.');
   }
@@ -37,12 +37,12 @@ function question2func() {
   var question2 = prompt(questions[1]);
 
   if (question2.toUpperCase() === answers[0] || question2.toUpperCase() === answers[1]) {
-    two.innerHTML = ('Lucky you ' + userName + '!');
+    two1.innerHTML = ('Lucky you ' + userName + '!');
     count = count + 1;
     console.log(count);
     img2.innerHTML = '<img src="img/seattlerain.jpg" width="200">';
   } else if (question2.toUpperCase() === answers[2] || question2.toUpperCase() === answers[3]) {
-      two.innerHTML = ('No, ' + userName + ' That\'s not the right answer');
+      two2.innerHTML = ('No, ' + userName + ' That\'s not the right answer');
   } else {
       two.innerHTML = ('Please Provide a relevant response.');
   }
@@ -55,12 +55,12 @@ function question3func() {
   var question3 = prompt(questions[2]);
 
   if (question3.toUpperCase() === answers[0] || question3.toUpperCase() === answers[1]) {
-    three.innerHTML = ('Fantastic ' + userName + '!');
+    three1.innerHTML = ('Fantastic ' + userName + '!');
     count = count + 1;
     console.log(count);
     img3.innerHTML = '<img src="img/javascript.png" width="200">';
   } else if (question3.toUpperCase() === answers[2] || question3.toUpperCase() === answers[3]) {
-    three.innerHTML = ('No, ' + userName + ' that\'s not the right answer');
+    three2.innerHTML = ('No, ' + userName + ' that\'s not the right answer');
   } else {
     three.innerHTML = ('Please ' + userName + ', provide a relevant response.');
   }

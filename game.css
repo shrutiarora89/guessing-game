@@ -1,0 +1,13 @@
+body {
+  background-color: #99CCFF;
+}
+
+.answer1 {
+  color: #006600;
+  font-weight: bold;
+}
+
+.answer2 {
+  color: red;
+  font-weight: bold;
+}
