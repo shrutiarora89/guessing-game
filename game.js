@@ -30,7 +30,7 @@ function question1func() {
 
     // Taking the Answer and Logging it with a meaning message
     console.log('This is what you answered for Question1 ' + question1.toUpperCase());
-}
+  }
 //////////////////////////////////////////////////////////////////////////////////////
 
 function question2func() {
@@ -60,9 +60,9 @@ function question3func() {
     console.log(count);
     img3.innerHTML = '<img src="img/javascript.png" width="200">';
   } else if (question3.toUpperCase() === answers[2] || question3.toUpperCase() === answers[3]) {
-    three2.innerHTML = ('No, ' + userName + ' that\'s not the right answer');
+      three2.innerHTML = ('No, ' + userName + ' that\'s not the right answer');
   } else {
-    three.innerHTML = ('Please ' + userName + ', provide a relevant response.');
+      three.innerHTML = ('Please ' + userName + ', provide a relevant response.');
   }
   console.log('This is what you answered for Question3 ' + question3.toUpperCase());
 
@@ -80,7 +80,7 @@ function question3func() {
 
 //   var question4 = prompt(questions[3]);
 //     for (var i = 0; i < 4; i++) {
-    
+
 //     if (question4.toUpperCase() === foodAnswers[i]) {
 //       four.innerHTML = ('This is correct ' + userName + '.');
 //       count = count + 1;
