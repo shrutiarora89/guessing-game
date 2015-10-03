@@ -70,8 +70,8 @@ function question3func() {
 //////////////////////////////////////////////////////////////////////////////////////
 
 // Add a fourth question that utilizes an array of possible answers, and then use a 'for' loop
-//  to check for a right answer: Here's the basic process: create a function for your fourth question 
-//  (make sure to remember to call it later!) and inside of that function, declare and initialize an 
+//  to check for a right answer: Here's the basic process: create a function for your fourth question
+//  (make sure to remember to call it later!) and inside of that function, declare and initialize an
 //  array of answers for that question (for instance, "Who is my favorite Seahawk?"). Use a 'for' loop
 //  to iterate through that array and test whether it matches the user's guess. As before, provide
 
